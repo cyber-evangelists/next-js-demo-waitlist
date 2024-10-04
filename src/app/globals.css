@@ -11,14 +11,14 @@
 }
 
 /* Dark mode styles */
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: rgb(31,41,55);
     --foreground: #ededed;
-    /* --background: rgb(10,56,124); */
+    --background: rgb(10,56,124);
     background: linear-gradient(114deg, rgba(10,56,124,1) 15%, rgba(58,110,187,1) 28%, rgba(26,71,138,1) 43%, rgba(30,73,139,1) 63%, rgba(5,39,89,1) 79%);;
   }
-}
+} */
 
 body {
   color: var(--foreground);
