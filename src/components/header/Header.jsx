@@ -30,12 +30,12 @@ const Header = ({ viewMode, setViewMode, headerVisible, setHeaderVisible }) => {
   return (
     <div className="bg-dark">
       <div className="flex justify-between items-center py-3 px-7 h-18 w-full  text-white z-30 relative">
-        <div className="flex md:flex-1">
+        <div className="flex min-md:flex-1">
           <h1 className="m-0">
             <Image src={logoImg} alt="logo" />
           </h1>
         </div>
-        <div className=" md:flex md:items-center">
+        <div className="xs:hidden min-md:flex min-md:items-center">
           <button
             className="demo-preview-desktop is-active rounded-sm mx-2 flex items-center justify-center p-0 h-8 w-8"
             title="Desktop"
@@ -55,7 +55,7 @@ const Header = ({ viewMode, setViewMode, headerVisible, setHeaderVisible }) => {
         </div>
         <div className="flex items-center flex-1 justify-end">
           <div className="demo-preview-select  relative text-sm mr-3 flex gap-3">
-            <div className="demo-preview-selected font-medium text-gray-50 border border-gray-600 rounded-lg py-1.5 px-3 cursor-pointer w-36  md:flex items-center justify-center">
+            <div className="md:hidden demo-preview-selected font-medium text-gray-50 border border-gray-600 rounded-lg py-1.5 px-3 cursor-pointer w-36  min-md:flex items-center justify-center">
               <Dropdown overlay={menuItems} trigger={["click"]}>
                 <a className="">
                   <span className="whitespace-nowrap overflow-hidden overflow-ellipsis w-[calc(100% - 22px)]">
@@ -66,7 +66,7 @@ const Header = ({ viewMode, setViewMode, headerVisible, setHeaderVisible }) => {
               </Dropdown>
             </div>
             <div className="flex items-center gap-5">
-              <button className="js-buy btn-xs text-white font-bold text-[14px] bg-violet-500 hover:bg-violet-600 outline-none px-5 py-1 md:py-0 lg:py-3 rounded-lg box-border">
+              <button className="js-buy btn-xs text-white font-bold text-[14px] bg-violet-500 hover:bg-violet-600 outline-none px-5 py-1 -md:py-0 lg:py-3 rounded-lg box-border">
                 <span>
                   Buy Now <span className="text-white/50">-</span> $49{" "}
                 </span>

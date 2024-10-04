@@ -5,7 +5,7 @@ const Cards = ({ viewMode }) => {
     <div className="w-full max-w-screen-xl mx-auto pb-10 mb-10">
       <div
         className={`grid gap-6 mx-5 ${
-          viewMode === "mobile" ? "grid-cols-1" : "md:grid-cols-3"
+          viewMode === "mobile" ? "grid-cols-1" : "min-md:grid-cols-3"
         }`}
       >
         {/* card 1 */}

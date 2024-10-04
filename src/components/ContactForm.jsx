@@ -23,7 +23,7 @@ const ContactForm = () => {
   );
   return (
     <div className="w-full max-w-2xl mx-auto  h-96 flex flex-col items-center">
-      <form action="" className="md:w-2/4  bg-shadow px-2 py-2 rounded-xl">
+      <form action="" className="min-md:w-2/4  bg-shadow px-2 py-2 rounded-xl">
         <div className="flex flex-row items-center px-3 py-1 w-full gap-1 bg-white rounded-lg mb-2 overflow-hidden">
           <svg
             className="fill-svgColor"

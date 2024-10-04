@@ -2,7 +2,7 @@ import React from "react";
 
 const MainHeader = () => {
   return (
-    <div className=" px-6 md:mt-6 flex justify-center mb-10 bg-custom_gradient">
+    <div className=" px-6 min-md:mt-6 flex justify-center mb-10 bg-custom_gradient">
       <div className="w-full max-w-3xl">
         <div className="rounded-lg flex gap-2 h-12 justify-between items-center px-3 shadow-cf0cr bg-gradient relative">
           <div className="bg-shadow rounded-sm -z-10 -inset-[0.375rem] absolute">
@@ -29,13 +29,13 @@ const MainHeader = () => {
           {/* navigation links */}
           <nav className="">
             <ul className="flex justify-center items-center gap-3">
-              <li className="font-medium md:px-6 md:py-1 hover:bg-shadow hover:cursor-pointer hover:rounded">
+              <li className="font-medium min-md:px-6 min-md:py-1 hover:bg-shadow hover:cursor-pointer hover:rounded">
                 Updates
               </li>
-              <li className="md:px-6 md:py-1 hover:bg-shadow hover:cursor-pointer hover:rounded">
+              <li className="min-md:px-6 min-md:py-1 hover:bg-shadow hover:cursor-pointer hover:rounded">
                 FAQ
               </li>
-              <li className="md:px-6 md:py-1 hover:bg-shadow hover:cursor-pointer hover:rounded">
+              <li className="min-md:px-6 min-md:py-1 hover:bg-shadow hover:cursor-pointer hover:rounded">
                 Contact us
               </li>
             </ul>
