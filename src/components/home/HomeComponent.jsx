@@ -32,7 +32,7 @@ const HomeComponent = () => {
             {/* <MainHeader /> */}
             <GetInTouch />
             <ContactForm />
-            <Cards />
+            <Cards viewMode={viewMode} />
             <Footer />
           </div>
         </div>
