@@ -2,15 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Root styles for light mode */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --tw-bg-opacity: 1;
+  --background: rgb(227,241,249);
+  --foreground: rgb(31 41 55 / var(--tw-text-opacity));
+  --background: linear-gradient(330deg, rgba(227,241,249,1) 32%, rgba(180,173,255,1) 60%, rgba(227,241,249,1) 71%) no-repeat;
 }
 
+/* Dark mode styles */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: rgb(31,41,55);
     --foreground: #ededed;
+    /* --background: rgb(10,56,124); */
+    background: linear-gradient(114deg, rgba(10,56,124,1) 15%, rgba(58,110,187,1) 28%, rgba(26,71,138,1) 43%, rgba(30,73,139,1) 63%, rgba(5,39,89,1) 79%);;
   }
 }
 
@@ -24,4 +30,14 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+
+  /* Optional custom gradient utility */
+  .gradient-background {
+    background: var(--gradient-background);
+  }
 }
+
+
+
+
+/* linear-gradient(330deg, rgba(227,241,249,1) 32%, rgba(180,173,255,1) 60%, rgba(227,241,249,1) 71%) no-repeat */
